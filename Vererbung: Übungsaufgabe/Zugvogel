@@ -1,0 +1,12 @@
+public class Zugvogel extends Vogel{
+	
+	boolean zugvogel = false;
+	
+	public Zugvogel (int alter, float groeße, String vogelart, boolean zugvogel) {
+		
+		super(alter, groeße, vogelart);
+		this.zugvogel = zugvogel;
+		
+	}
+
+}
