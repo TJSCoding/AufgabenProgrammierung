@@ -1,0 +1,19 @@
+public class Vogel extends Tier {
+	
+	String vogelart;
+	
+	public Vogel (int alter, float groeße, String vogelart) {
+		
+		super(alter, groeße, false);
+		this.vogelart = vogelart;
+		
+	}
+	
+	@Override
+	public void lautAusgeben () {
+		
+		System.out.println("Zwitschern");
+		
+	}
+
+}
