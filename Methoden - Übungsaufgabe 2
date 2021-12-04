@@ -1,0 +1,21 @@
+public class MethodeAusgabe {
+	
+	public static int zahl1 = 7;
+	public static int zahl2 = 35;
+		
+	public static void main (String[] args) {
+		
+		int zahl1 = 10;
+		int zahl2 = 27;
+		summieren(zahl1,zahl2);
+		
+	}
+	
+	public static void summieren(int zahl1, int zahl2) {
+		
+		System.out.println(zahl1 + zahl2);
+		System.out.println(MethodeAusgabe.zahl1 + MethodeAusgabe.zahl2);
+		
+	}
+
+}
