@@ -1,0 +1,28 @@
+public class Verkaufsverwaltung {
+	
+	public static void main (String[]args) {
+		
+		Kunden[] kundenverwaltung = new Kunden[1000];
+		
+		Kunden kunde1 = new Kunden (100, "Max Mustermann", "Mannheim", 68159);
+		Kunden kunde2 = new Kunden (101, "Tanja Müller", "Stuttgart", 70713);
+		Kunden kunde3 = new Kunden (102, "Tom Fischer", "Karlsruhe", 76131);
+		
+		kundenverwaltung[0] = kunde1;
+		kundenverwaltung[1] = kunde2;
+		kundenverwaltung[2] = kunde3;
+		
+		for (int i = 0; i < kundenverwaltung.length; i++) {
+			
+			if (kundenverwaltung[i] != null) {
+				
+				kundenverwaltung[i].nameAufteilen();
+				System.out.println("Name: " + kundenverwaltung[i].vorname + " " + kundenverwaltung[i].nachname);
+				
+			}
+			
+		}
+		
+	}
+	
+}
