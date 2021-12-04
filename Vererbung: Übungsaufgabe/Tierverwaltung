@@ -1,0 +1,19 @@
+public class Tierverwaltung {
+	
+	public static void main (String[] args) {
+		
+		Katze maylo = new Katze (5, 25.0f);
+		Vogel mia = new Vogel (2, 10.5f, "Amsel");
+		Zugvogel josi = new Zugvogel (3, 80, "Storch", true);
+		
+		maylo.lautAusgeben();
+		mia.lautAusgeben();
+		josi.lautAusgeben();
+		
+		System.out.println (maylo.saeugetier);
+		System.out.println (mia.vogelart);
+		System.out.println (josi.saeugetier);
+		
+	}
+
+}
