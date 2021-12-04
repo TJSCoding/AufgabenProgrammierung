@@ -1,0 +1,18 @@
+public class Fuhrparkverwaltung {
+	
+	public static void main (String[] args) {
+		
+		Fuhrpark.setAnzahlFahrzeuge(5, true);
+		System.out.println(Fuhrpark.getAnzahlFahrzeuge());
+		
+		Auto mercedes = new Auto ("CLA", 5000, "123a");
+		System.out.println(Fuhrpark.getAnzahlFahrzeuge());
+		Auto bmw = new Auto ("3er", 1000, "123b");
+		System.out.println(Fuhrpark.getAnzahlFahrzeuge());
+		mercedes.setKilometerstand(5500, "123");
+		mercedes.setKilometerstand(5500, "123a");
+		System.out.println(mercedes.getKilometerstand());
+				
+	}
+
+}
