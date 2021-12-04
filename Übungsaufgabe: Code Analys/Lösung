@@ -1,0 +1,17 @@
+public class CodeAnalyse {
+	
+	public static void main (String[] args) {
+		
+		int counter = 1;
+		int laufendeNr = 1;
+		
+		while (++counter < 10) {
+			
+			System.out.println (laufendeNr + ": Ausgabe!");
+			laufendeNr = laufendeNr+1;
+			
+		}
+		
+	}
+
+} --> Ausgabe findet 8x statt
