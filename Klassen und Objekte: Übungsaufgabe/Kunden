@@ -1,0 +1,35 @@
+public class Kunden {
+	
+	public String name;
+	public String vorname;
+	public String nachname;
+	public String wohnort;
+	public int plz;
+	public int id;
+	
+	public Kunden (int kundenId, String kundenname, String kundenwohnort, int plz) {
+		
+		name = kundenname;
+		wohnort = kundenwohnort;
+		this.plz = plz;
+		id = kundenId;
+		
+	}
+	
+	public void nameAufteilen () {
+		
+		int indexChar = name.indexOf(" ");
+		if (indexChar > -1) {
+			
+			vorname = name.substring(0, indexChar);
+			nachname = name.substring(indexChar+1);
+						
+		} else {
+			
+			System.out.println ("Der Name " + name + " ist nicht teilbar");
+			
+		}
+		
+	}
+	
+}
