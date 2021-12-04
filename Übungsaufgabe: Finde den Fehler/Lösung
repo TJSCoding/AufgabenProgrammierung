@@ -1,0 +1,19 @@
+public FehlerFinden { // class fehlt
+	public static main (String[] args) { // void fehlt
+		long fibo=0; fibo1 = 1, fibo2 = 0; // ; falsch gesetzt bei erster Variable
+		int n = 5, // Komma statt ;
+		if (n==0) ( fibo = 0; } // ( statt {
+		else {
+				if (n = 1) { fibo = 1; } // = statt ==
+				else {
+					for (a = 1; a < n; ++a ) { // int fehlt bei a
+						fibo =fibo1 + fibo2;
+						System.out.println("aktuelles Ergebnis + fibo);  "//" fehlt
+						fibo2 = fibo1;
+						fibo1 = fibo;
+					}
+				}
+			system.out.println("Fibaonaci Gesamtergebnis:" + fibo);	// s klein
+		}
+	}
+}
