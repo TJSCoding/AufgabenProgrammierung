@@ -1,0 +1,45 @@
+public class Supermarkt {
+	
+	String supermarktName;
+	Artikel[] artikel; 
+	int artikelIndex;
+	
+	public Supermarkt (String name, int artikelAnzahl) {
+		
+		artikelIndex = 0;
+		supermarktName = name;
+		int supermartkNummer = 10;
+		artikel = new Artikel[artikelAnzahl];
+		
+	}
+	
+	public void inSortimentAufnehmen (Artikel a) {
+		
+		artikel[artikelIndex] = a;
+		artikelIndex++;
+		
+	}
+	
+	public void preiseerhöhen (int preisErhoehung) {
+		
+		int preisErhoehung1 = preisErhoehung+1;;
+		
+		for (int i = 0; i < artikel.length; i++) {
+			
+			artikel[i].preis += preisErhoehung1;
+			
+		}
+		
+	}
+	
+	public void preiseAusgeben () {
+		
+		for (int i = 0; i < artikel.length; i++) {
+			
+			System.out.println(artikel[i].name + ": " + artikel[i].preis);
+			
+		}
+		
+	}
+	
+}
