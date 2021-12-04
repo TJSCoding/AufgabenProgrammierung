@@ -1,0 +1,25 @@
+public class Fuhrpark {
+		
+	private static int anzahlFahrzeuge = 0;
+		
+	public static void setAnzahlFahrzeuge (int veraenderung, boolean erhoehung) {
+			
+		if (erhoehung = true) {
+				
+			anzahlFahrzeuge += veraenderung;
+				
+		} else {
+				
+			anzahlFahrzeuge -= veraenderung;
+				
+		}
+			
+	}
+		
+	public static int getAnzahlFahrzeuge () {
+			
+	 	return anzahlFahrzeuge;
+			
+	}
+		
+}
