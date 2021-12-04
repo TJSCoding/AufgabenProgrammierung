@@ -1,0 +1,39 @@
+function main (args:String[]):void 
+	
+	Konsolenausgabe von validierungPW(Test8*_2abc)
+	
+	
+
+function validierungPW (passWort:String):boolean
+	
+	checkGroßBuchstabe:=false
+	checkKleinBuchstabe:=false
+	checkZiffer:=false
+	checkSonderZeichen:=false
+	
+	If Länge von passWort < 10 dann
+		return false
+	
+	For i:=0 bis i < Länge von passWort
+	
+		If Zeichen an Position i von passWort >= a UND Zeichen an Position i von passWort <= z dann
+			checkKleinBuchstabe:=true
+			
+		If Zeichen an Position i von passWort >= A UND Zeichen an Position i von passWort <= Z dann
+			checkGroßBuchstabe:=true
+			
+		If Zeichen an Position i von passWort >= 0 UND Zeichen an Position i von passWort <= 9 dann
+			checkZiffer:=true
+			
+		If Zeichen an Position i von passWort == ? 
+		   ODER Zeichen an Position i von passWort == _
+		   ODER Zeichen an Position i von passWort == %
+		   ODER Zeichen an Position i von passWort == /
+		   ODER Zeichen an Position i von passWort == * dann 
+			checkSonderZeichen:=true
+			
+	If checkGroßBuchstabe == true UND checkKleinBuchstabe == true UND checkZiffer == true UND checkSonderZeichen == true dann
+			return  true
+	sonst
+			return false
+			
