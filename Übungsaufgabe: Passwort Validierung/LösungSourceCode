@@ -1,0 +1,65 @@
+public class PWCheck {
+	
+	public static void main (String[] args) {
+		
+		System.out.println(validierungPW("Test8*_2abc"));
+		
+	}
+	
+	public static boolean validierungPW (String passWort) {
+		
+		boolean checkGroßBuchstabe = false;
+		boolean checkKleinBuchstabe = false;
+		boolean checkZiffer = false;
+		boolean checkSonderZeichen = false;
+		
+		if (passWort.length() < 10) {
+			
+			return false;
+			
+		}
+		
+		for (int i = 0; i < passWort.length(); i++) {
+			
+			if (passWort.charAt(i) >= 'a' && passWort.charAt(i) <= 'z') {
+				
+				checkKleinBuchstabe = true;
+				
+			}
+			
+			if (passWort.charAt(i) >= 'A' && passWort.charAt(i) <= 'Z') {
+				
+				checkGroßBuchstabe = true;
+				
+			} 
+			
+			if (passWort.charAt(i) >= '0' && passWort.charAt(i) <= '9') {
+				
+				checkZiffer = true;
+				
+			} 
+			
+			if (passWort.charAt(i) == '?' || passWort.charAt(i) == '_' 
+										  || passWort.charAt(i) == '%'
+										  || passWort.charAt(i) == '/'
+										  || passWort.charAt(i) == '*') {
+					
+				checkSonderZeichen = true;
+				
+			}
+			
+		}
+		
+		if (checkGroßBuchstabe == true && checkKleinBuchstabe == true
+			&& checkZiffer == true && checkSonderZeichen == true) {
+			
+			return true;
+			
+		} else {
+			
+			return false;
+		}	
+		
+	}
+
+}
