@@ -1,0 +1,48 @@
+public class Auto {
+
+	private String name;
+	private int kilometerstand;
+	private String passwort;
+	
+	public Auto (String name, int kilometerstand, String passwort) {
+		
+		this.name = name;
+		this.kilometerstand = kilometerstand;
+		this.passwort = passwort;
+		Fuhrpark.setAnzahlFahrzeuge(1, true);
+		
+	}
+	
+	public void setKilometerstand (int kilometerstand, String passwort) {
+		
+		if (this.passwort == passwort) {
+			
+			this.kilometerstand = kilometerstand;
+			
+		} else {
+			
+			System.out.println ("Falsches Passwort");
+			
+		}
+		
+	}
+	
+	public void setName (String name) {
+		
+		this.name = name;
+		
+	}
+	
+	public int getKilometerstand () {
+		
+		return kilometerstand;
+		
+	}
+	
+	public String name () {
+		
+		return name;
+		
+	}
+	
+}
