@@ -1,0 +1,27 @@
+public class SucheArray {
+
+	public static void main (String[] args) {
+		
+	String[] stringSammlung = {"Auto","Baum","Sonne","Computer","Katze"};
+	String gesuchterString = "Katze";
+	boolean ergebnis = findeString(stringSammlung, gesuchterString);
+	System.out.println(ergebnis);		
+		
+	}
+	
+	public static boolean findeString (String[] stringSammlung, String gesuchterString) {
+		
+		for (int i = 0; i < stringSammlung.length; i++) {
+			
+			if (stringSammlung[i].equals(gesuchterString)) {
+			
+				return true;
+			
+			}
+		}
+		
+		return false;
+		
+	}
+	
+}
