@@ -1,0 +1,30 @@
+public class FormBerechnungSchreibTischTest {
+	
+	public static void main (String[] args) {
+		
+		int laenge;
+		int breite;
+		int hoehe;
+		boolean formWuerfel;
+		
+		laenge = hoehe = 20;	// laenge = 20, hoehe = 20
+		breite = 18;			// breite = 18
+		breite++;				// breite = 19
+		++breite;				// breite = 20
+		formWuerfel = (laenge == breite && laenge == hoehe); //formWuerfel = true
+		System.out.println("Ist die Form ein Würfel " + formWuerfel); // formWuerfel = true
+		
+		laenge = 10;			// laenge = 10
+		hoehe = 10;				// hoehe = 10
+		breite = (breite * laenge);		// breite = 200
+		formWuerfel = (laenge == breite && laenge == hoehe); // formWuerfel = false
+		System.out.println("Ist die Form ein Würfel: "  + formWuerfel); // formWuerfel = false
+		
+		laenge = breite;	// laenge = 200
+		hoehe *= 20;		// hoehe = 200
+		formWuerfel = (laenge == breite && laenge == hoehe); //formWuerfel = true
+		System.out.println("Ist die Form ein Würfel: "  + formWuerfel);	//formWuerfel = true
+		
+	}
+
+}
