@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class TypkonvertierungAufgabe2 {
+	
+	public static void main (String []args) {
+	
+		Scanner input = new Scanner(System.in);
+		long zahl =input.nextLong();
+		
+		if(zahl >= Integer.MIN_VALUE && zahl <= Integer.MAX_VALUE) {
+			
+			if(zahl >= Short.MIN_VALUE && zahl <= Short.MAX_VALUE) {
+				
+				if (zahl >= Byte.MIN_VALUE && zahl <= Byte.MAX_VALUE) {
+				
+					byte zahlneu =  (byte) zahl;
+					System.out.println ("Kleinster Werteberich der Zahl " + zahlneu + " ist Byte");
+					
+				} else {
+									
+					short zahlneu = (short) zahl;
+					System.out.println ("Kleinster Werteberich der Zahl " + zahlneu + " ist Short");
+				
+				}
+				
+			} else {
+				
+				int zahlneu = (int) zahl;
+				System.out.println ("Kleinster Werteberich der Zahl " + zahlneu + " ist Int");
+					
+			}
+			
+		} else {
+		
+			System.out.println ("Kleinster Werteberich der Zahl " + zahl + " ist Long");
+			
+		}
+		
+		input.close();
+	}
+}
