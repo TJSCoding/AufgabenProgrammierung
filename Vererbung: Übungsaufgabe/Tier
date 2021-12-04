@@ -1,0 +1,21 @@
+public abstract class Tier {
+	
+	int alter;
+	float groeße;
+	boolean saeugetier;
+	
+	public Tier (int alter, float groeße, boolean saeugetier) {
+		
+		this.alter = alter;
+		this.groeße = groeße;
+		this.saeugetier = saeugetier;
+		
+	}
+	
+	public void lautAusgeben () {
+		
+		System.out.println("Generischer Laut");
+		
+	}
+	
+}
