@@ -1,0 +1,17 @@
+public class Katze extends Tier {
+	
+	public Katze (int alter, float groeße) {
+		
+		super(alter, groeße, true);
+		
+	}
+	
+	@Override
+	public void lautAusgeben () {
+		
+		super.lautAusgeben();
+		System.out.println("Miau");
+		
+	}
+	
+}
