@@ -1,0 +1,19 @@
+public class SupermarktVerwaltung {
+	
+	public static void main (String[]args) {
+		
+		Supermarkt einkaufsland = new Supermarkt ("Einkaufsland",2);
+		Artikel cola = new Artikel ("Cola", 1.59);
+		Artikel brot = new Artikel ("Bauernbrot", 2.99);
+		Artikel wasser = new Artikel ("Mineralwasser", 0.99);
+		
+		einkaufsland.inSortimentAufnehmen(cola);
+		einkaufsland.inSortimentAufnehmen(brot);
+		einkaufsland.artikel[0] = brot;
+		einkaufsland.artikel[1] = wasser;
+		
+		einkaufsland.preiseerhöhen(10);
+		
+	}
+
+}
